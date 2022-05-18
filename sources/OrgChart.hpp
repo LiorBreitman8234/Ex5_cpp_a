@@ -3,12 +3,12 @@
 //
 
 #ifndef EX5_CPP_A_ORGCHART_HPP
-#define EX5_CPP_A_ORGCHART_HPP7
+#define EX5_CPP_A_ORGCHART_HPP
 #include "Node.hpp"
 #include <string>
 #include <iostream>
 #include <utility>
-#include "iterators.hpp"
+#include <queue>
 namespace ariel{
     class OrgChart{
         Node<std::string>* root;
@@ -30,6 +30,7 @@ namespace ariel{
 
         Iterator begin();
         Iterator end();
+        friend std::ostream &operator<<(std::ostream &os, OrgChart &chart);
     };
 }
 #endif //EX5_CPP_A_ORGCHART_HPP
