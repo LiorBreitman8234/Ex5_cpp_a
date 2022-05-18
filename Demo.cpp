@@ -9,9 +9,10 @@
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
-using namespace std;
+
 
 #include "OrgChart.hpp"
+using namespace std;
 using namespace ariel;
 
 int main() {
